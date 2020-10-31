@@ -1,0 +1,1 @@
+web: gunicorn NicsBoutiqueApp.wsgi --log-file -
