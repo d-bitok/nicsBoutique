@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>NEWorld Market · Nics Boutique</title>
+    <title>Nics Boutique · NEWorld Market</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -37,7 +37,7 @@
 
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <a class="navbar-brand mr-auto mr-lg-0" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bolder;" href="{% url 'Market' %}"><i class="material-icons large right">local_mall</i>NEWorld Market</a>
+        <a class="navbar-brand mr-auto mr-lg-0" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bolder;" href="{% url 'Market' %}"><i class="material-icons large right">shopping_basket</i>Nics Boutique</a>
         <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
     <span><i class="material-icons large right">menu</i></span>
   </button>
@@ -45,25 +45,31 @@
         <div class="navbar-collapse container offcanvas-collapse py-0">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'Market' %}"><i class="material-icons large right">home</i>Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'Market' %}"><i class="material-icons large right">home</i><span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'Store' %}"><i class="material-icons large right">shopping_basket</i>Shop</a>
+                    <a class="nav-link" href="{% url 'Store' %}"><i class="material-icons large right">store</i><span class="badge badge-pill bg-light float-right align-text-top">4</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="material-icons large right">store</i><span class="badge badge-pill bg-light float-right align-text-top">4</span>Stores</a>
+                    <a class="nav-link" href="{% url 'Cart' %}"><i class="material-icons large right">shopping_cart</i><span class="badge badge-pill bg-light float-right align-text-top">2</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'Cart' %}"><i class="material-icons large right">shopping_cart</i><span class="badge badge-pill bg-light float-right align-text-top">2</span>Cart</a>
+                    <a class="nav-link" href="{% url 'Checkout' %}"><i class="material-icons large right">local_mall</i></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="material-icons large right">account_balance_wallet</i>Wallet</a>
+                    <a class="nav-link" href="#"><i class="material-icons large right">account_balance_wallet</i></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="material-icons large right">tune</i>Tune</a>
+                    <a class="nav-link" href="#"><i class="material-icons large right">local_taxi</i></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="material-icons large right">widgets</i></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="material-icons large right">tune</i></a>
                 </li>
                 <li class="nav-item active dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons large right">more_vert</i>More</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons large right">more_vert</i></a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         <a class="dropdown-item" href="#"><i class="material-icons large right">hotel</i>Hotels</a>
                         <a class="dropdown-item" href="#"><i class="material-icons large right">local_taxi</i>Taxi</a>
